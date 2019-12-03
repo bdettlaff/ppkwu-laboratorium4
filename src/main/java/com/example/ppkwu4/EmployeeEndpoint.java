@@ -39,7 +39,7 @@ public class EmployeeEndpoint {
         return "employeeList";
     }
 
-    @RequestMapping(value = "/generate-vcard", method = RequestMethod.POST)
+    @RequestMapping(value = "/vcard", method = RequestMethod.POST)
     public ResponseEntity<Resource> generateVCard(@ModelAttribute("employee") Employee employee)
             throws IOException {
         File file = new File("vcard.vcf");

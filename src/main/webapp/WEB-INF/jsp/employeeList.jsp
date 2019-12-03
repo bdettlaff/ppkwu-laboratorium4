@@ -10,7 +10,7 @@
 <body>
     <table>
         <c:forEach items="${employees}" var="employee">
-            <form:form method="POST" action="/generate-vcard" modelAttribute="employee" acceptCharset="ISO-8859-1 UTF-8">
+            <form:form method="POST" action="/vcard" modelAttribute="employee" acceptCharset="ISO-8859-1 UTF-8">
                 <tr>
                     <td>Imie:</td>
                     <td>${employee.getName()}</td>
